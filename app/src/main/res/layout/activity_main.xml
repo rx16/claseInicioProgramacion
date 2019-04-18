@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="17dp"
+        android:text="ACTIVIDAD 2 - MOVILES"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="3dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/texViewNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="18dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="251dp"
+        android:onClick="sumar"
+        android:text="Sumar" />
+    <Button
+        android:id="@+id/buttonResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="249dp"
+        android:layout_toEndOf="@+id/buttonSuma"
+        android:onClick="restar"
+        android:text="Restar" />
+    <Button
+        android:id="@+id/buttonZooMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonSuma"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="322dp"
+        android:onClick="zoomMas"
+        android:text="Zoom +" />
+    <Button
+        android:id="@+id/buttonZooMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonResta"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/buttonZooMas"
+        android:onClick="zoomMenos"
+        android:text="Zoom -" />
+    <Button
+        android:id="@+id/buttonOcultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonZooMas"
+        android:layout_alignStart="@+id/buttonZooMas"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="33dp"
+        android:onClick="ocultar"
+        android:text="Ocultar" />
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonZooMenos"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/buttonOcultar"
+        android:onClick="reset"
+        android:text="Reset" />
+
+</RelativeLayout>
